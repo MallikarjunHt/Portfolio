@@ -1,7 +1,6 @@
 import React from "react";
-import { FaPalette, FaReact, FaCode } from "react-icons/fa";
-import { FaGithub, FaDiscord, FaTwitter, FaRegEnvelope, FaDev} from "react-icons/fa";
-
+import { FaReact, FaJava, FaPython, FaPowerOff, FaMarkdown, FaSignal} from "react-icons/fa";
+import { FaGithub, FaDiscord, FaTwitter, FaRegEnvelope, FaDev, FaFire} from "react-icons/fa";
 const BOOTSTRAP_FOR_SKILL_ICON = "text-4xl mx-auto inline-block";
 const data = {
   name: "Mallikarjun H T",
@@ -41,32 +40,37 @@ const data = {
   skills: [
     {
       skillName: "java",
-      skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
+      skillIcon: <FaJava className={BOOTSTRAP_FOR_SKILL_ICON} />,
       discription: ""
     },
-    {
-        skillName: "c#",
-        skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
-        discription: ""
-      },
       {
         skillName: "python",
-        skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
+        skillIcon: <FaPython className={BOOTSTRAP_FOR_SKILL_ICON} />,
         discription: ""
       },
       {
-        skillName: "rect",
-        skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
+        skillName: "ReactJs",
+        skillIcon: <FaReact className={BOOTSTRAP_FOR_SKILL_ICON} />,
         discription: ""
       },
       {
-        skillName: "postman",
-        skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
+        skillName: "springBoot",
+        skillIcon: <FaPowerOff className={BOOTSTRAP_FOR_SKILL_ICON} />,
         discription: ""
       },
       {
         skillName: "markdown",
-        skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
+        skillIcon: <FaMarkdown className={BOOTSTRAP_FOR_SKILL_ICON} />,
+        discription: ""
+      },
+      {
+        skillName: "Google Analytics",
+        skillIcon: <FaSignal className={BOOTSTRAP_FOR_SKILL_ICON} />,
+        discription: ""
+      },
+      {
+        skillName: "FireStore",
+        skillIcon: <FaFire className={BOOTSTRAP_FOR_SKILL_ICON} />,
         discription: ""
       }
   ],
