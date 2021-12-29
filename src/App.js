@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import About from "./components/About";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import data from "./assets/data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
+      <div data-aos="fade-down" data-aos-duration="800">
+        <Card name={data.name} title={data.title} social={data.social} />
+      </div>
+       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <About title={data.about.title} description={data.about.description} />
+        <Skills skills={data.skills} />
+         <Projects projects={data.projects} />
+        <Footer github={data.github.url} />
+      </div> 
     </div>
-  );
+  )
 }
-
-export default App;
