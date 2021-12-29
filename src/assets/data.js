@@ -80,7 +80,7 @@ const data = {
         "reactjs",
         "tailwindcss"
       ],
-      link: "https://github.com/braydentw/react-tailwind-portfolio"
+      link: "https://mallikarjunht.github.io/Portfolio/"
     },
     {
         title: "TODO APP",
