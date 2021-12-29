@@ -115,6 +115,9 @@ const data = {
   ],
   github: {
       url: "https://api.github.com/users/MallikarjunHt/starred"
+  },
+  detdotto:{
+      userName: "mallikarjunht"
   }
 };
 export default data;

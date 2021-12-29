@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import data from "./assets/data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import DevBlog from "./components/DevBlog";
 
 export default function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function App() {
         <About title={data.about.title} description={data.about.description} />
         <Skills skills={data.skills} />
          <Projects projects={data.projects} />
+         <DevBlog userName={data.detdotto.userName}/>
         <Footer github={data.github.url} />
       </div> 
     </div>
